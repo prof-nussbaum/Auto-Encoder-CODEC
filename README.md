@@ -18,7 +18,9 @@ WHY USE AUTO-ASSOCIATIVE NETWORKS?
 In many cases, AI seeks to extract features from the original data set, and then use those features to train a classifier system that can perform as well as a human can.
 The extraction of features is somewhat of an artform, that often uses application specific knowledge, also from human experts.
 For many applications, human experts have NOT found good features to extract - and indeed must use the original data for classification.
-In these cases, machine learning may be used to try and discern the salient feature that still allow correct classification (by the machine).
+In these cases, machine learning may be used to try and discern the salient features that still allow correct classification (by the machine).
+
+
 NOTE: feature extraction may be lossy - in that the original data cannot be recreated exactly from the extracted features.
 For this reason, an auto-associative network can be useful because it recreates a best-estimate of the original data from the extracted features.
 In this way, a human expert can use the recreated data to tell if classification is still possible.
