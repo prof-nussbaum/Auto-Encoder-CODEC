@@ -1,7 +1,7 @@
-# Auto-Associative-CODEC
-Auto-Associative How To
+# Auto-Encoder-CODEC
+This is an Auto-Encoder or Auto-Associative How To
 
-This repository includes "how to" examples of auto-associative neural networks. 
+This repository includes "how to" examples of auto-associative neural networks. These are sometimes called Auto-Encoders.
 These networks have the ability to encode and decode (CODEC) sample data in the most efficient and low-loss way.
 The minimization of the loss function is accomplished through the use of gradient descent training algorithms.
 
