@@ -11,6 +11,24 @@ The first "how-to" example comes from a competition held on the kaggle.com websi
 
 <h3>WHAT IS THE OVERARCHING GOAL?</h3>
 The competition, as well as details about the data set used for training, can be found here: https://www.kaggle.com/c/tgs-salt-identification-challenge.
+The purpose of the competition is to see who best can create an AI system that classifies seismic signals to identify underground salt deposits.
+There are human experts who can do this classification from the original data, and indeed have done so to create the training and testing data.
+
+<h3>WHY USE AUTO-ASSOCIATIVE NETWORKS? </h3>
+In many cases, AI seeks to extract features from the original data set, and then use those features to train a classifier system that can perform as well as a human can. The extraction of features is somewhat of an artform, that often uses application specific knowledge, also from human experts. For many applications, human experts have NOT found good features to extract - and indeed must use the original data for classification. In these cases, machine learning may be used to try and discern the salient features that still allow correct classification (by the machine).
+
+<h3>LOSSY FEATURE EXTRACTION</h3>
+NOTE: feature extraction may be lossy - in that the original data cannot be recreated exactly from the extracted features. For this reason, an auto-associative network can be useful because it recreates a best-estimate of the original data from the extracted features. In this way, a human expert can use the recreated data to tell if classification is still possible. I call this a part of the exercise that I've chosen to give the, perhaps silly, name of "Reading the Robot Mind."
+
+<h3>EXAMPLE CODE</h3>
+An example execution of the auto-associative Jupyter Notebook can be found here: https://www.kaggle.com/pnussbaum/auto-associative-how-to-using-tgs-salt-columns/execution. In this example execution, seismic data is divided into columns of 101 points of sound reflection depth data. The data is encoded down to 20 values (down from 101). The decoding process is also shown, recreating the original data, but in a lossy way. The purpose of this exercise is to see if "too much" data has been removed. If "too much" data has been removed, then an expert in seismic analysis will no longer be able to easily discern the classification from the decoded information.
+
+<h2>Example 2 - VSB Power using Auto-encoding</h2>
+
+This second "how-to" example comes from a competition held on the kaggle.com website. 
+
+<h3>WHAT IS THE OVERARCHING GOAL?</h3>
+The competition, as well as details about the data set used for training, can be found here: https://www.kaggle.com/c/vsb-power-line-fault-detection.
 The purpose of the competition is to see who best can create an AI system that classifies signals on medium voltage overhead power lines indicating a fault (fallen tree, etc.).
 There are human experts who can do this classification from the original data, and indeed have done so to create the training and testing data.
 
