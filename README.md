@@ -67,3 +67,15 @@ An unintended benefit of this technique is that residual data pointed out a pote
 The first auto-encoder naturally found the main frequency of the powerline voltage, which was clearly shown in the recreated (lossy) signal.
 The second auto-encoder surprisingly found a seventh harmonic of this signal as being pronounced in most of the data samples.
 This potential flaw was reported to the manufacturer who promised to investigate further.
+
+<h2>Example 3 - MNIST Digit ConvAutoencoder</h2>
+
+This "how-to" example comes from a competition held on the kaggle.com website. 
+
+<h3>WHAT IS THE OVERARCHING GOAL?</h3>
+Recognize handwritten digits from the MNIST dataset. Do it with CNN generated "features" or "encoded" version of the input - the center of an autoencoder. 
+
+The subject matter expert (SME) can recognize digits. They qualitatively rate the amount of data lost due to encoded compression. If the SME can no longer make a classification from a decoded input, they qualitatively assess that too much data has been removed.
+
+Is this true? No. It is possible to train a CNN to classify with internal represntations that are distorted and simplified to the extent that they no longer can be used to recreate the input. I believe this is due to the fact that the SME not only classifies the examples, but so much more else.
+
